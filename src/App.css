@@ -1,38 +1,189 @@
-.App {
+*, html {
+  padding: 0;
+}
+
+.advanced_filter_button {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  height: 50px;
+  width: 150px;
+  background: #5EC16F;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.modal_view {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  bottom: 10%;
+  min-height: 90vh;
+  min-width: 70vw;
+  margin: auto;
+  border: 8px solid rgb(20, 20, 53);
+}
+
+.modal_header {
+  display: flex;
+  flex-direction: row;
+  color: lightgray;
+  width: 100%;
+  background-color: #F0FFF3;
+}
+
+.modal_header > div {
+  width: 20%;
+  padding: 20px 10px;
+  height: 20px;
+  border: 1px solid lightgray;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modal_body {
+  height: 100vh;
+  padding: 10px;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.industries_tags {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.industries_tags > h4 {
+  flex: 1;
+}
+
+.industries_tags > hr {
+  flex: 1.5;
+  border: 1px solid lightgray;
+}
+
+input {
+  width: 95%;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid lightgrey;
+}
+
+.search_option {
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid lightgrey;
+  cursor: pointer;
+}
+.options_container {
+  position: absolute;
+  background-color: white;
+  width: 93%;
+  max-height: 30vh;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+.industries_headlines {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 10px;
+  padding: 10px;
+}
+.industries_headlines > h4 {
+  flex: 1;
+}
+
+.industries_headlines > hr {
+  flex: 8;
+  border: 1px solid lightgray;
+}
+
+.industries {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.checkboxes {
+  display: flex;
+  margin: 10px;
+}
+
+.checkboxes > div {
+  width: 30%;
+}
+
+.checkbox_item {
+  display: flex; 
+}
+
+.checkbox_item > input {
+  width: auto;
+  padding: 0;
+  margin: 7px;
+}
+
+.sector {
+  background-color: #C6FFCF;
+  color: black;
+}
+
+.footer_section {
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  bottom: 1px;
+}
+
+hr {
+  border: 0.5px solid lightgray;
+}
+.footer_buttons {
+  display: flex;
+  align-content: stretch;
+  height: 50px;
+  float: right;
+  margin-right: 10px;
+}
+
+.cancel_button {
+  color: #5EC16F;
+  background-color: white;
+  margin: 10px;
+  border: none;
+}
+
+.clearAll_button {
+  width: 100px;
+  margin: 10px;
+  color: #5EC16F;
+  background-color: white;
+  border: 1px solid #5EC16F;
+}
+
+.apply_button {
+  width: 100px;
+  margin: 10px;
   color: white;
+  background-color: #5EC16F;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.submitted_result {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  height: 500px;
+  width: 500px;
+  padding: 10px;
+  border: 1px solid #5EC16F;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submitted_result > ul {
+  list-style-type: none;
 }
