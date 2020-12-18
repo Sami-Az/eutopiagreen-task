@@ -75,6 +75,7 @@ input {
   border-top: 1px solid lightgrey;
   cursor: pointer;
 }
+
 .options_container {
   position: absolute;
   background-color: white;
@@ -87,6 +88,7 @@ input {
   overflow: scroll;
   scroll-behavior: smooth;
 }
+
 .industries_headlines {
   display: flex;
   align-items: center;
@@ -94,6 +96,7 @@ input {
   margin: 10px;
   padding: 10px;
 }
+
 .industries_headlines > h4 {
   flex: 1;
 }
@@ -142,6 +145,7 @@ input {
 hr {
   border: 0.5px solid lightgray;
 }
+
 .footer_buttons {
   display: flex;
   align-content: stretch;
@@ -179,10 +183,21 @@ hr {
   left: 10%;
   height: 500px;
   width: 500px;
-  padding: 10px;
-  border: 1px solid #5EC16F;
+  padding: 30px;
+  border: 1px solid lightgray;
+  background-color: #5EC16F;
+  color: white;
 }
 
 .submitted_result > ul {
   list-style-type: none;
+}
+
+.submitted_result > h5 {
+  text-decoration: underline;
+  color: black;
+}
+
+.submitted_result > h3 {
+  color: black;
 }
